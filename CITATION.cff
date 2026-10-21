@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: 'Práctica 2: Modelado Matemático'
+message: >-
+  If you use this software, please cite it using the metadata from this file.
+type: software
+authors:
+  - given-names: Ricardo Rioda Santiago
+    family-names: Sanchez
+    email: m25210047@tectijuana.edu.mx
+    affiliation: TecNM / IT Tijuana
+    orcid: 'https://orcid.org/0009-0008-9493-3501'
+repository-code: 'https://github.com/Hiram20buz/MMP2'
