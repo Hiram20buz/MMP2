@@ -237,18 +237,13 @@ El cálculo numérico de los equilibrios se realiza para cada uno de los cinco r
 La matriz Jacobiana del sistema es
 
 $$
-J(x,y,z)=
-\begin{bmatrix}
-r_{1}(1-2b_{1}x)-a_{12}y-a_{13}z & -a_{12}x & -a_{13}x \\
--a_{21}y & r_{2}(1-2b_{2}y)-a_{21}x & 0 \\
-(r_{3}-a_{31})z & 0 & (r_{3}-a_{31})x-d_{3}
-\end{bmatrix}.
+J(x,y,z)=\begin{bmatrix} r_{1}(1-2b_{1}x)-a_{12}y-a_{13}z & -a_{12}x & -a_{13}x \\\\ -a_{21}y & r_{2}(1-2b_{2}y)-a_{21}x & 0 \\\\ (r_{3}-a_{31})z & 0 & (r_{3}-a_{31})x-d_{3} \end{bmatrix}.
 $$
 
 Para cada equilibrio $E_{i}=(x_{i},y_{i},z_{i})$ se evalúa $J(E_{i})$, se obtienen sus valores propios $\lambda_{1},\lambda_{2},\lambda_{3}$ y se clasifica su estabilidad local según los signos de las partes reales:
 
-- Si $\operatorname{Re}(\lambda_{i})<0$ para todo $i$: equilibrio **asintóticamente estable**.
-- Si existe $\operatorname{Re}(\lambda_{i})>0$: equilibrio **inestable**.
+- Si $\mathrm{Re}(\lambda_{i})<0$ para todo $i$: equilibrio **asintóticamente estable**.
+- Si existe $\mathrm{Re}(\lambda_{i})>0$: equilibrio **inestable**.
 - En otro caso: estabilidad **no concluyente** por linealización.
 
 [Volver al contenido](#contenido)
