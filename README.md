@@ -104,7 +104,7 @@ Las variables de estado se interpretan de la siguiente forma:
 La dinámica del sistema se localiza en el octante no negativo definido por
 
 $$
-\mathbf{R}_{+,0}^{3}=\left\{x(t)\geq 0,\; y(t)\geq 0,\; z(t)\geq 0\right\}.
+\mathbf{R}_{+,0}^{3}=\lbrace x(t)\geq 0,~ y(t)\geq 0,~ z(t)\geq 0\rbrace.
 $$
 
 [Volver al contenido](#contenido)
@@ -135,11 +135,11 @@ El parámetro $a_{12}\in[0,1]$ representa la fracción de células patológicas 
 
 | $a_{12}$ | Dinámica | Intervalo temporal | Condiciones iniciales $(x_{0},y_{0},z_{0})$ |
 |:---:|---|:---:|---|
-| 1.00 | Atractor caótico | $[0,1000]$ | $(0.555,\; 0.148,\; 0.172)$ |
-| 0.90 | Órbita periódica | $[0,500]$ | $(0.254781,\; 0.115167,\; 0.600527)$ |
-| 0.80 | Ciclo límite interno | $[0,500]$ | $(0.2,\; 0.6,\; 0.1)$ |
-| 0.75 | Ciclo límite externo | $[0,500]$ | $(0.4,\; 0.2,\; 0.4)$ |
-| 0.50 | Convergencia a equilibrio | $[0,500]$ | $(0.5,\; 0.5,\; 0.4)$ |
+| 1.00 | Atractor caótico | $[0,1000]$ | $(0.555,~0.148,~0.172)$ |
+| 0.90 | Órbita periódica | $[0,500]$ | $(0.254781,~0.115167,~0.600527)$ |
+| 0.80 | Ciclo límite interno | $[0,500]$ | $(0.2,~0.6,~0.1)$ |
+| 0.75 | Ciclo límite externo | $[0,500]$ | $(0.4,~0.2,~0.4)$ |
+| 0.50 | Convergencia a equilibrio | $[0,500]$ | $(0.5,~0.5,~0.4)$ |
 
 [Volver al contenido](#contenido)
 
@@ -155,13 +155,13 @@ El cuaderno compara tres métodos explícitos de diferencias finitas aplicados a
 Para un sistema $\dot{\mathbf{X}}=\mathbf{F}(\mathbf{X})$,
 
 $$
-\mathbf{X}_{n+1}=\mathbf{X}_{n}+h\,\mathbf{F}(\mathbf{X}_{n}).
+\mathbf{X}_{n+1}=\mathbf{X}_{n}+h~\mathbf{F}(\mathbf{X}_{n}).
 $$
 
 ### Método de Heun (Euler mejorado)
 
 $$
-\widetilde{\mathbf{X}}_{n+1}=\mathbf{X}_{n}+h\,\mathbf{F}(\mathbf{X}_{n}),
+\widetilde{\mathbf{X}}_{n+1}=\mathbf{X}_{n}+h~\mathbf{F}(\mathbf{X}_{n}),
 $$
 
 $$
@@ -177,7 +177,7 @@ $$
 
 $$
 k_{3}=\mathbf{F}(\mathbf{X}_{n}+\tfrac{h}{2}k_{2}),\qquad
-k_{4}=\mathbf{F}(\mathbf{X}_{n}+h\,k_{3}),
+k_{4}=\mathbf{F}(\mathbf{X}_{n}+h~k_{3}),
 $$
 
 $$
